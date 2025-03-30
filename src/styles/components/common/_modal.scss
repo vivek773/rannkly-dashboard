@@ -1,0 +1,78 @@
+@import '../../utils/variables';
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $overlay-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  width: 100%;
+  max-width: 800px;
+  background: var(--bg-color);
+  padding: $modal-padding;
+  border-radius: $modal-border-radius;
+  box-shadow: 0 2px 4px var(--secondry);
+  position: relative;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  h2 {
+    margin: 0;
+    font-size: $header-font-size;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 110px;
+  right: 250px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: $close-btn-color;
+  background-color: $close-btn-bg;
+  border-radius: 50%;
+  width: $close-btn-size;
+  height: $close-btn-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-filters {
+  display: flex;
+  gap: $spacing-10;
+
+  .filter-btn {
+    background-color: $filter-btn-bg;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: $spacing-14;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &.active {
+      background-color: $icon-hover-color;
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: $card-border-color;
+    }
+  }
+}

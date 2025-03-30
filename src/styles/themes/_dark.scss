@@ -1,0 +1,19 @@
+[data-theme="light"] {
+    --bg-color: #{$color-white};
+    --text-color: #{$color-black};
+    --card-bg: #{$color-light-gray};
+    --icon-color: #{$color-dark-gray};
+    --sidebar-bg: #{$color-light-gray};
+    --light-gray: #{#9FA1A2};
+    --secondry: #{$secondary-10};
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #{$bg-dark};
+    --text-color: #{$color-dark-text};
+    --card-bg: #{$bg-dark};
+    --icon-color: #{$color-gray};
+    --sidebar-bg: #{$sidebar-bg};
+    --light-gray: #{#B8B8B8};
+    --secondry: #{$secondary-20};
+  }

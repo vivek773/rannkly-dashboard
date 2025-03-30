@@ -1,0 +1,29 @@
+@import '../../utils/variables';
+
+.toggle-buttons {
+  display: flex;
+  background-color: $toggle-bg;
+  border-radius: 8px;
+  padding: $toggle-padding;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  padding: $button-padding;
+  font-size: $button-font-size;
+  cursor: pointer;
+  color: $button-color;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: $button-border-radius;
+
+  &.active {
+    background-color: $button-active-bg;
+    color: $color-active;
+    box-shadow: $button-box-shadow;
+  }
+
+  &:hover {
+    color: $color-active;
+  }
+}

@@ -1,0 +1,78 @@
+@import "../../utils/variables";
+
+.card {
+  background: var(--bg-color);
+  border-radius: $card-border-radius;
+  box-shadow: 0 2px 4px var(--secondry);
+  padding: 16px;
+  transition: $transition;
+  border: 1px solid $card-border-color;
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+
+    .card-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        accent-color: #ccc;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .card-content {
+    height: 300px;
+    position: relative;
+
+    .expand-icon {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+.options-btn {
+  position: relative;
+  width: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.dropdown-container {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10;
+}
+
+.card.checked {
+  background: $purple-10;
+  border: 1px solid $purple-20;
+
+  .card-title input[type="checkbox"] {
+    accent-color: $purple-30;
+  }
+}

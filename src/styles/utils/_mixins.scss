@@ -1,0 +1,66 @@
+// mixins.scss
+
+// mixin for spacing
+@mixin generate-spacing-classes($property, $prefix) {
+    @for $i from 1 through 100 {
+      .#{$prefix}-#{$i} {
+        #{$property}: #{$i}px;
+      }
+    }
+  }
+  
+  @mixin padding-classes {
+    @include generate-spacing-classes(padding, 'p');
+    @include generate-spacing-classes(padding-top, 'pt');
+    @include generate-spacing-classes(padding-right, 'pr');
+    @include generate-spacing-classes(padding-bottom, 'pb');
+    @include generate-spacing-classes(padding-left, 'pl');
+  }
+  
+  @mixin margin-classes {
+    @include generate-spacing-classes(margin, 'm');
+    @include generate-spacing-classes(margin-top, 'mt');
+    @include generate-spacing-classes(margin-right, 'mr');
+    @include generate-spacing-classes(margin-bottom, 'mb');
+    @include generate-spacing-classes(margin-left, 'ml');
+  }
+
+// mixin for tooltip
+@mixin custom-tooltip {
+  background:var(--card-bg);
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--secondry);
+  font-family: 'Inter', sans-serif;
+
+  .label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  .value {
+    font-size: 14px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '•';
+      margin-right: 8px;
+      font-size: 16px;
+    }
+  }
+}
+
+// mixin for title
+@mixin title($size, $color: inherit, $line-height: 100%, $letter-spacing: 0px, $align: inherit) {
+  font-weight: 400;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-align: $align;
+  color: $color;
+}

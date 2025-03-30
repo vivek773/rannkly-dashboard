@@ -1,0 +1,152 @@
+// Font Family
+$font-primary: "Inter", sans-serif;
+
+// Colors
+$color-black: #1c1c1c;
+$color-dark-gray: #494849;
+$color-gray: #9f9a9a;
+$color-white: #ffffff;
+$color-primary: #7854e3;
+$color-secondary: #f1edfc;
+$color-light-gray: #f6f7f9;
+$color-border-gray: #e6e6e6;
+$color-hover-bg: rgba(100, 80, 230, 0.1);
+$color-hover: #644ee6;
+$color-icon-hover: #007bff;
+$color-text: #333;
+$color-active: #7854e3;
+$color-first-item: #666;
+$color-last-item: #000;
+$purple-10: #faf8ff;
+$purple-20: #a381ff;
+$purple-30: #7854e3;
+$secondary-10: #e6e6e6;
+$secondary-20: #4B4C4C;
+$secondary-30: #E8E8E9;
+$secondary-40: #B8B8B8;
+
+// Dark Mode Colors
+$color-dark-bg: #323232;
+$color-dark-card: #4b4c4c;
+$color-dark-text: #e8e8e9;
+$bg-dark: #15161a;
+$sidebar-bg: #212324;
+
+// Spacing
+$spacing-4: 4px;
+$spacing-8: 8px;
+$spacing-10: 10px;
+$spacing-12: 12px;
+$spacing-14: 14px;
+$spacing-16: 16px;
+$spacing-18: 18px;
+$spacing-20: 20px;
+$spacing-22: 22px;
+$spacing-24: 24px;
+
+// Sidebar
+$sidebar-width: 212px;
+$sidebar-closed-width: 80px;
+$sidebar-text-color: $color-text;
+$sidebar-padding: 20px 16px;
+$sidebar-box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+
+// Navbar
+$navbar-height: 44px;
+$navbar-padding: 12px 20px;
+$icon-hover-color: $color-icon-hover;
+$profile-img-size: 40px;
+
+// Dashboard
+$card-bg: $color-white;
+$card-border-radius: 12px;
+$card-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+$card-border-color: $color-border-gray;
+$grid-gap: 20px;
+
+// Filter
+$filter-bg: $color-white;
+$filter-border: 1px solid $color-border-gray;
+$filter-border-radius: 8px;
+$filter-padding: 10px 16px;
+$filter-font-size: 14px;
+$filter-color: $color-text;
+$filter-hover-bg: $color-light-gray;
+$filter-hover-border: $color-border-gray;
+
+// Filter Sidebar
+$filterSidebar-bg: $color-white;
+$filterSidebar-width: 300px;
+$filterSidebar-height: 85vh;
+$filterSidebar-box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+
+// Download Popup
+$overlay-bg: rgba(0, 0, 0, 0.5);
+$popup-bg: $color-white;
+$popup-padding: 30px;
+$popup-border-radius: 12px;
+$popup-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+$popup-width: 400px;
+$icon-size: 40px;
+$text-color: $color-text;
+
+// Dropdown Menu
+$dropdown-bg: $color-white;
+$dropdown-border-radius: 12px;
+$dropdown-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+$dropdown-padding: 12px;
+$dropdown-width: 180px;
+$arrow-size: 8px;
+$item-padding: 10px;
+$item-font-size: 14px;
+$item-color: $color-text;
+$item-hover-bg: $color-light-gray;
+$active-color: $color-active;
+$first-item-color: $color-first-item;
+$last-item-color: $color-last-item;
+
+// Main Layout
+$transition: all 0.3s ease-in-out;
+$expanded-margin: 212px;
+$collapsed-margin: 80px;
+$content-padding: 20px;
+
+// Modal
+$modal-bg: $color-white;
+$modal-padding: 20px;
+$modal-border-radius: 12px;
+$modal-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+$header-font-size: 18px;
+$close-btn-bg: $color-dark-gray;
+$close-btn-color: $color-white;
+$close-btn-size: 34px;
+$filter-btn-bg: $color-light-gray;
+
+// Toggle Button
+$toggle-bg: $color-light-gray;
+$toggle-padding: 5px;
+$button-padding: 10px 20px;
+$button-font-size: 14px;
+$button-color: $color-text;
+$button-active-bg: $color-white;
+$button-hover-color: $color-active;
+$button-border-radius: 6px;
+$button-box-shadow: 0 0 0 1px $color-border-gray;
+
+// Tooltip variables
+$tooltip-bg: #fff;
+$tooltip-border: 1px solid #e0e0e0;
+$tooltip-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+$label-color: #333;
+
+// Font Sizes
+$font-size-small: $spacing-10;
+$font-size-xs: $spacing-12;
+$font-size-sm: $spacing-14;
+$font-size-md: $spacing-16;
+$font-size-lg: $spacing-24;
+
+// Colors
+$color-dark: #1c1c1c;
+$color-light-10: #9fa1a2;
+$color-gray-10: #484849;

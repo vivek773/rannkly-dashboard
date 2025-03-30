@@ -1,0 +1,122 @@
+@import '../../utils/variables';
+
+.filter-sidebar {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  width: $filterSidebar-width;
+  height: $filterSidebar-height;
+  background: var(--bg-color);
+  box-shadow: 1px 2px 4px var(--secondry);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: $sidebar-padding;
+  transition: $transition;
+  transform: translateX(0);
+
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h2 {
+      margin: 0;
+      font-size: $spacing-18;
+    }
+
+    .close-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .sidebar-content {
+    flex-grow: 1;
+    overflow-y: auto;
+
+    .filter-section {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid $button-box-shadow;
+      border-radius: $spacing-8;
+
+      h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: $spacing-16;
+        margin-bottom: 10px;
+
+        .clear-btn {
+          font-size: $spacing-14;
+          color: $active-color;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+
+      .search-input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+
+      .checkbox-group, .radio-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        label {
+          display: flex;
+          align-items: center;
+          font-size: $spacing-14;
+
+          input {
+            margin-right: 8px;
+          }
+        }
+      }
+
+      .date-inputs {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        input[type="date"] {
+          padding: 8px;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+        }
+      }
+    }
+  }
+
+  .sidebar-footer {
+    display: flex;
+    justify-content: space-between;
+
+    .reset-btn {
+      background: none;
+      border: none;
+      color: $active-color;
+      cursor: pointer;
+      font-size: $spacing-16;
+    }
+
+    .apply-btn {
+      background: $active-color;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: $spacing-16;
+    }
+  }
+}

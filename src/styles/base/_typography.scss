@@ -1,0 +1,38 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.title-5 {
+  @include title($font-size-small, $color-gray-10, 100%, 0px, center);
+}
+
+.title-10 {
+  @include title($font-size-sm);
+}
+
+.title-20 {
+  @include title($font-size-sm, $color-black, 100%, 0px);
+  vertical-align: middle;
+}
+
+.title-25 {
+  @include title($font-size-xs, $color-light-10);
+}
+
+.title-30 {
+  @include title($font-size-sm, var(--text-color), 20px, 0%);
+  vertical-align: middle;
+}
+
+.title-35 {
+  @include title($font-size-lg, $color-black);
+}
+
+.title-40 {
+  @include title($font-size-sm, $color-light-10, 20px, 0%);
+}
+
+.title-45 {
+  font-family: "Open Sans", sans-serif;
+  @include title($font-size-md);
+  vertical-align: middle;
+}

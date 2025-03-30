@@ -1,0 +1,40 @@
+// Layout
+@import "./components/layout/navbar";
+@import "./components/layout/sidebar";
+@import "./components/layout/main-layout";
+
+// common
+@import "./components/common/modal";
+@import "./components/common/breadcrumb";
+@import "./components/common/dropdownMenu";
+@import "./components/common/downloadPopup";
+@import "./components/common//card";
+
+// Filters
+@import "./components/filters/toggleButtons";
+@import "./components/filters/filterSidebar";
+@import "./components/filters/filter";
+
+// Pages
+@import "./pages/dashboard";
+
+// Utils
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/utilities";
+
+@import "./themes/dark";
+@import "./base/typography";
+
+@include padding-classes;
+@include margin-classes;
+
+body {
+    font-family: $font-primary;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease; 
+  }
+  
